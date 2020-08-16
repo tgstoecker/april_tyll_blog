@@ -4,6 +4,8 @@ title:  "Our trip to Prague"
 author: tyll
 categories: [ Prague, vacation ]
 image: assets/images/prague_stnicholas_view.jpg
+travel: true
+hidden: false
 ---
 
 

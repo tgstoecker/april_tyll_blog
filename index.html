@@ -5,19 +5,44 @@ title: Home
 
 {% if page.url == "/" %}
 
-<!-- Featured
+
+<!-- Food
 ================================================== -->
-<section class="featured-posts">
+<section class="food-posts">
     <div class="section-title">
-        <h2><span>Featured</span></h2>
+        <h2><span>Food</span></h2>
     </div>
     <div class="row">
 
     {% for post in site.posts %}
 
-        {% if post.featured == true %}
+        {% if post.food == true %}
 
-            {% include featuredbox.html %}
+            {% include foodbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+
+
+    </div>
+</section>
+
+
+
+<!-- Travel
+================================================== -->
+<section class="travel-posts">
+    <div class="section-title">
+        <h2><span>Travel</span></h2>
+    </div>
+    <div class="row">
+
+    {% for post in site.posts %}
+
+        {% if post.travel == true %}
+
+            {% include travelbox.html %}
 
         {% endif %}
 
