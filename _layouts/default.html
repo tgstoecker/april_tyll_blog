@@ -95,10 +95,12 @@ ga('send', 'pageview');
 <!-- Site Title
 ================================================== -->
 <div class="mainheading" >
-    <h1 class="sitetitle">{{ site.name }}</h1>
-    <p class="lead">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <h1 class="sitetitle">{{ site.name }}</h1>
+        <p class="lead">
         {{ site.description }}
-    </p>
+        </p>
+    </a>
 </div>
 
 <!-- Content
